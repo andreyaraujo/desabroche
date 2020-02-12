@@ -23,7 +23,7 @@ if (null == $id) {
 
 <head>
     <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
+    <!-- CSS compilado e minificado mais recente -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <title>Informações do Contato</title>
 </head>

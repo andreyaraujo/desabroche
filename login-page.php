@@ -1,18 +1,7 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
-
+<?php
+session_start();
+require_once 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -38,8 +27,7 @@
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="index.php">
-          Logo</a>
+        <a class="navbar-brand" href="index.php"><img src="assets/img/logo/logo 6.1.png" alt="Desabroche" height="80"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -63,16 +51,7 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/desabrochee_" target="_blank" data-original-title="Follow us on Twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/desabrochee_" target="_blank" data-original-title="Like us on Facebook">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/desabrochee_" target="_blank" data-original-title="Follow us on Instagram">
               <i class="fa fa-instagram"></i>
@@ -87,7 +66,8 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login">
-            <form class="form" method="post" action="login-page.php">
+
+            <form class="form" method="post" action="?go=logar">
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Login</h4>
                 <div class="social-line">
@@ -107,18 +87,10 @@
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="material-icons">face</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Usuário">
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
                       <i class="material-icons">mail</i>
                     </span>
                   </div>
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" class="form-control" placeholder="Email" name="email" id="email">
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -126,41 +98,28 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" placeholder="Senha...">
+                  <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha">
                 </div>
               </div>
               <div class="footer text-center">
-                <button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Iniciar</button>
+                <!-- <button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Login</button> -->
+                <input type="submit" name="btnLogin"class="btn btn-primary btn-link btn-wd btn-lg" value="Logar">
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <!--Rodapé-->
+    <footer class="footer" data-background-color="black">
       <div class="container">
         <nav class="float-left">
           <ul>
-            <li>
-              <a href="https://www.creative-tim.com">
-                Time Criador
-              </a>
+            <a href="About US.php">
+              About Us
+            </a>
             </li>
             <li>
-              <a href="https://creative-tim.com/presentation">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license">
-                Licenses
-              </a>
-            </li>
           </ul>
         </nav>
         <div class="copyright float-right">
@@ -168,24 +127,48 @@
           <script>
             document.write(new Date().getFullYear())
           </script>, feito com <i class="material-icons">favorite</i> por
-          <a href="#" target="_blank">NOSTODOS</a> para a web.
+          <a href="#" target="_blank">Projeto:YI</a> para a web.
         </div>
       </div>
     </footer>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
 </body>
 
 </html>
+<?php
+if (@$_GET['go'] == 'logar') {
+  $email = $_POST['email'];
+  $senha = $_POST['senha'];
+
+  $logar = "SELECT * FROM pessoa WHERE email = '$email' AND senha = '$senha'";
+
+  if (empty($email)) {
+    echo "<script>alert.onWindow('Preencha o seu email para logar-se'); history.back();</script>";
+  } elseif (empty($senha)) {
+    echo "<script>alert('Preencha sua senha para logar-se'); history.back();</script>";
+  } else {
+    $query1 = mysqli_num_rows(mysqli_query($conn, $logar));
+    if ($query1 == 1) {
+      $_SESSION['email_session'] = $email;
+      $_SESSION['senha_session'] = $senha;
+      echo "<script>Window.alert('Usuário logado com sucesso.');</script>";
+      echo "<meta http-equiv='refresh' content='0, url=./logado/index.php'>";
+    } else {
+      echo "<script>Window.alert('Usuário não existe.'); history.back();</script>";
+      echo "<meta http-equiv='refresh' content='0, url=cad-page.php'>";
+    }
+  }
+}
+?>

@@ -1,3 +1,28 @@
+<?php
+session_start();
+ob_start();
+$btnCad = filter_input(INPUT_POST, 'btnCad', FILTER_SANITIZE_STRING);
+if ($btnCad) {
+  include_once  'banco.php';
+  $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
+  $dados['senha'] = password_hash($dados('senha'), PASSWORD_DEFAULT);
+   
+  $result_usuario = "INSERT INTO pessoa (nome, endereco, telefone, email, sexo, senha) values ( 
+          '".$dados['nome']."',
+          '".$dados['endereco']."',
+          '".$dados['telefone']."',
+          '".$dados['email']."',
+          '".$dados['sexo']."',
+          '".$dados['senha']."'          
+          )";
+
+  
+
+}
+require_once 'banco.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,25 +31,20 @@
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Desabroche
-  </title>
+  <title>Desabroche</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
+  <!-- Fonts and icons  -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
+  <!-- CSS arquivos -->
   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="login-page sidebar-collapse">
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="index.php">
-          Logo</a>
+        <a class="navbar-brand" href="index.php"><img src="assets/img/logo/logo 6.1.png" alt="Desabroche" height="80"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -48,16 +68,6 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/desabrochee_" target="_blank" data-original-title="Follow us on Twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/desabrochee_" target="_blank" data-original-title="Like us on Facebook">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/desabrochee_" target="_blank" data-original-title="Follow us on Instagram">
               <i class="fa fa-instagram"></i>
@@ -163,8 +173,8 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input size="40" class="form-control" name="senha" type="text" placeholder="Senha" required="" value="<?php echo !empty($senha) ? $senha : ''; ?>">
-                  
+                  <input size="40" class="form-control" name="senha" type="password" placeholder="Senha" required="" value="<?php echo !empty($senha) ? $senha : ''; ?>">
+
                   <?php if (!empty($senhaErro)) : ?>
                     <span class="help-inline"><?php echo $senhaErro; ?></span>
                   <?php endif; ?>
@@ -172,68 +182,58 @@
               </div>
               <!-- Botão -->
               <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-link btn-wd btn-lg">Cadastre-se</button>
+                <button type="submit" name="btnCad" class="btn btn-primary btn-link btn-wd btn-lg">Cadastre-se</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container">
+  </div>
+  <!--Rodapé-->
+  <footer class="footer" data-background-color="black">
+    <div class="container">
+      <div class="copyright float-left">
         <nav class="float-left">
           <ul>
-            <li>
-              <a href="https://www.creative-tim.com">
-                Time Criador
-              </a>
-            </li>
-            <li>
-              <a href="https://creative-tim.com/presentation">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license">
-                Licenses
-              </a>
-            </li>
+            <a href="About US.php">
+              About Us
+            </a>
           </ul>
         </nav>
-        <div class="copyright float-right">
-          &copy;
-          <script>
-            document.write(new Date().getFullYear())
-          </script>, feito com <i class="material-icons">favorite</i> por
-          <a href="#" target="_blank">NOSTODOS</a> para a web.
-        </div>
       </div>
-    </footer>
-  </div>
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, feito com <i class="material-icons">favorite</i> por
+        <a href="#" target="_blank">Projeto:YI</a> para a web.
+      </div>
+    </div>
+  </footer>
   <!--   Core JS Files   -->
-  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="assets/js/plugins/moment.min.js"></script>
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+  <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
 </body>
 
 </html>
 
 <?php
-require 'banco.php';
+
+
+
+
+
 
 if (!empty($_POST)) {
   //Acompanha os erros de validação
@@ -287,6 +287,7 @@ if (!empty($_POST)) {
   }
 
   //Inserindo no Banco:
+
   if ($validacao) {
     $pdo = Banco::conectar();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -294,7 +295,10 @@ if (!empty($_POST)) {
     $q = $pdo->prepare($sql);
     $q->execute(array($nome, $endereco, $telefone, $email, $sexo, $senha));
     Banco::desconectar();
-    /* header("Location: index.php"); */
+    header("Location: index.php");
+  } else {
+    echo "<script>alert('Usuário já existe.'); history.back();</script>";
   }
 }
+
 ?>
