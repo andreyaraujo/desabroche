@@ -50,8 +50,6 @@ require_once 'config.php';
               </a>
             </div>
           </li>
-
-
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/desabrochee_" target="_blank" data-original-title="Follow us on Instagram">
               <i class="fa fa-instagram"></i>
@@ -66,7 +64,16 @@ require_once 'config.php';
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login">
-
+            <?php
+              if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+              }
+              if (isset($_SESSION['msgcad'])) {
+                echo $_SESSION['msgcad'];
+                unset($_SESSION['msgcad']);
+              }    
+            ?>
             <form class="form" method="post" action="?go=logar">
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Login</h4>
@@ -127,7 +134,7 @@ require_once 'config.php';
           <script>
             document.write(new Date().getFullYear())
           </script>, feito com <i class="material-icons">favorite</i> por
-          <a href="#" target="_blank">Projeto:YI</a> para a web.
+          <a href="equipe.php" target="_blank">Projeto:YI</a> para a web.
         </div>
       </div>
     </footer>

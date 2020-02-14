@@ -56,11 +56,15 @@
       <div class="row">
         <div class="col-md-6">
           <h1 class="title">Sua história começa conosco.</h1>
-          <h4>Cada página de destino precisa de uma pequena descrição após o grande título em negrito, por isso adicionamos este texto aqui. Adicione aqui todas as informações que podem fazer você ou seu produto criar a primeira impressão.</h4>
+          <h4>Somos uma empresa de TI em inovação e soluções para Marketing e Propaganda.
+            Oferecemos soluções e consultorias que geram otimização e performance para a sua empresa.
+            Nossa proposta de gestão é muito simples e objetiva. Sua equipe cuida das campanhas e nós cuidaremos para que tudo funcione e gere bons resultados!
+            Transparência e comprometimento começa aqui mesmo.
+            Nossos preços e o escopo não mudam conforme o porte da sua empresa. Afinal, seguimos um rigoroso processo que garante a nossa excelência no atendimento.</h4>
           <br>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
+          <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
             <i class="fa fa-play"></i> Watch video
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -79,11 +83,13 @@
                   </div>
                   <h4 class="card-title">Andrêy Araújo
                     <br>
-                    <small class="card-description text-muted">Desenvolvedor</small>
+                    <small class="card-description text-muted">Desenvolvedor Full-Stack</small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Você pode escrever aqui detalhes sobre um dos membros da sua equipe. Você pode dar mais detalhes sobre o que eles fazem. Sinta-se à vontade para adicionar alguns
-                      <a href="#">links</a> para que as pessoas possam segui-los fora do site.</p>
+                    <p class="card-description">Sou muito mais do que essas letras, frases e fotos falam sobre mim... sou as minhas atitudes, os meus sentimentos, as minhas ideias!
+                      Eu nunca cometo o mesmo erro duas vezes... Cometo umas cinco vezes, só pra ter certeza que é errado mesmo!
+                      Deus cuida de mim, mas sou eu quem decide para onde vou e o que faço!
+                    </p>
                   </div>
                   <div class="card-footer justify-content-center">
                     <a href="https://twitter.com/andreyaraujored" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
@@ -97,20 +103,20 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="assets/img/equipe/andrey.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                    <img src="assets/img/equipe/guilherme.jpeg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                   </div>
-                  <h4 class="card-title">Andrêy Araújo
+                  <h4 class="card-title">Guilherme Felix
                     <br>
-                    <small class="card-description text-muted">Desenvolvedor</small>
+                    <small class="card-description text-muted">Desenvolvedor full-Stack</small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Você pode escrever aqui detalhes sobre um dos membros da sua equipe. Você pode dar mais detalhes sobre o que eles fazem. Sinta-se à vontade para adicionar alguns
-                      <a href="#">links</a> para que as pessoas possam segui-los fora do site.</p>
+                    <p class="card-description"> Desenvolvedor Web Full-Stack trabalhando na área desde 2019, especializando-se sistemas de gerenciamento de banco de dados.
+                     <!--  <a href="https://www.instagram.com/p/B64WhDhBigQ/?igshid=1ha7p50qp3xv">para que as pessoas possam segui-los fora do site.</a></p> -->
                   </div>
                   <div class="card-footer justify-content-center">
-                    <a href="https://twitter.com/andreyaraujored" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/andrey__araujo/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/andrey.nascimento.904" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    <!-- <a href="https://twitter.com/andreyaraujored" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a> -->
+                    <a href="https://www.instagram.com/p/B64WhDhBigQ/?igshid=1ha7p50qp3xv" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <!-- <a href="https://www.facebook.com/andrey.nascimento.904" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -119,20 +125,20 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="assets/img/equipe/andrey.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                    <img src="assets/img/equipe/jozivaldo.jpeg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                   </div>
-                  <h4 class="card-title">Andrêy Araújo
+                  <h4 class="card-title">Jozivaldo Júnior
                     <br>
-                    <small class="card-description text-muted">Desenvolvedor</small>
+                    <small class="card-description text-muted">Desenvolvedor Full-Stack</small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Você pode escrever aqui detalhes sobre um dos membros da sua equipe. Você pode dar mais detalhes sobre o que eles fazem. Sinta-se à vontade para adicionar alguns
-                      <a href="#">links</a> para que as pessoas possam segui-los fora do site.</p>
+                    <p class="card-description">Desenvolvedor full-stack trabalhando na área desde de 2018, especializando-se em PHP, Python, DBMS, Java.
+                      <!-- <a href="#">para que as pessoas possam segui-los fora do site.</a></p> -->
                   </div>
                   <div class="card-footer justify-content-center">
-                    <a href="https://twitter.com/andreyaraujored" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/andrey__araujo/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/andrey.nascimento.904" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/in/jozivaldo-júnior-5b4394136" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/jozivaldojunior/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/jozivaldo.junior.7" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
                   </div>
                 </div>
               </div>
@@ -141,20 +147,20 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="assets/img/equipe/andrey.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                    <img src="assets/img/equipe/victor.jpeg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                   </div>
-                  <h4 class="card-title">Andrêy Araújo
+                  <h4 class="card-title">João Victor
                     <br>
-                    <small class="card-description text-muted">Desenvolvedor</small>
+                    <small class="card-description text-muted">Redator</small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Você pode escrever aqui detalhes sobre um dos membros da sua equipe. Você pode dar mais detalhes sobre o que eles fazem. Sinta-se à vontade para adicionar alguns
-                      <a href="#">links</a> para que as pessoas possam segui-los fora do site.</p>
+                    <p class="card-description">Redator no segundo período de desenvolvimento WEB no IFPE Campus Jaboatão dos Guararapes, inciante na área focado em páginas web.
+                    <!--   <a href="https://www.instagram.com/weed_4_need/">links</a> para que as pessoas possam segui-los fora do site.</p> -->
                   </div>
                   <div class="card-footer justify-content-center">
-                    <a href="https://twitter.com/andreyaraujored" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/andrey__araujo/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/andrey.nascimento.904" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    
+                    <a href="https://www.instagram.com/weed_4_need/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                   
                   </div>
                 </div>
               </div>
@@ -163,24 +169,24 @@
               <div class="team-player">
                 <div class="card card-plain">
                   <div class="col-md-6 ml-auto mr-auto">
-                    <img src="assets/img/equipe/andrey.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                    <img src="assets/img/equipe/mariana.jpeg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                   </div>
-                  <h4 class="card-title">Andrêy Araújo
+                  <h4 class="card-title">Mariana Santos
                     <br>
-                    <small class="card-description text-muted">Desenvolvedor</small>
+                    <small class="card-description text-muted">Redator</small>
                   </h4>
                   <div class="card-body">
-                    <p class="card-description">Você pode escrever aqui detalhes sobre um dos membros da sua equipe. Você pode dar mais detalhes sobre o que eles fazem. Sinta-se à vontade para adicionar alguns
-                      <a href="#">links</a> para que as pessoas possam segui-los fora do site.</p>
+                    <p class="card-description">Desenvolvedora web Full-Stack e Redator, cursando segundo período de informatica para internet no instituto federal de pernambuco campus Jaboatão dos Guararapes.
+                      <!-- <a href="https://www.instagram.com/oxemaari/?hl=pt-br">para que as pessoas possam segui-los fora do site.</a></p> -->
                   </div>
                   <div class="card-footer justify-content-center">
-                    <a href="https://twitter.com/andreyaraujored" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/andrey__araujo/" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/andrey.nascimento.904" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
+                    
+                    <a href="https://www.instagram.com/oxemaari/?hl=pt-br" target="_blank" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
+                    
                   </div>
                 </div>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -275,4 +281,5 @@
     }
   </script>
 </body>
+
 </html>

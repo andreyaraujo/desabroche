@@ -17,8 +17,13 @@ if ($btnCad) {
           '".$dados['senha']."'          
           )";
 
-  
-
+  $resultado_usuario = mysqli_query($cont, $result_usuario);
+  if (mysqli_insert_id($cont)) {
+    $_SESSION['msgcad'] = "Usuário cadastrado com sucesso";
+    header("location: login-pag.php");
+  }else {
+    $_SESSION['msg'] ="Erro ao cadastrar usuário";
+  }
 }
 require_once 'banco.php';
 ?>
@@ -207,7 +212,7 @@ require_once 'banco.php';
         <script>
           document.write(new Date().getFullYear())
         </script>, feito com <i class="material-icons">favorite</i> por
-        <a href="#" target="_blank">Projeto:YI</a> para a web.
+        <a href="equipe.php" target="_blank">Projeto:YI</a> para a web.
       </div>
     </div>
   </footer>

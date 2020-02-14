@@ -106,7 +106,7 @@
         <script>
           document.write(new Date().getFullYear())
         </script>, feito com <i class="material-icons">favorite</i> por
-        <a href="#" target="_blank">Projeto:YI</a> para a web.
+        <a href="equipe.php">Projeto:YI</a> para a web.
       </div>
     </div>
   </footer>
